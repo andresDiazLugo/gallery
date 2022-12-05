@@ -4,5 +4,5 @@ interface Context{
     getAllGallery:(toke:string)=>ReducerAction
 }
 
-const contexts = createContext()
+const contexts = createContext({})
 export default contexts
