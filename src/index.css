@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-color: rgb(38 38 38);
+}
+.spinner {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+  }
+  
+  .spinner::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(0deg, #ff0000 0%, #212121 50%);
+    animation: spin .5s infinite linear;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .spinner::after {
+    width: 85%;
+    height: 85%;
+    background-color: #212121;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

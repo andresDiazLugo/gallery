@@ -1,0 +1,7 @@
+export const signUp:string = "https://gallery-back.onrender.com/api/users/signup"
+export const sigIn: string = "https://gallery-back.onrender.com/api/users/sigin"
+export const getuserOne: string = "https://gallery-back.onrender.com/api/users/user/"
+export const uploadInfo: string = "https://gallery-back.onrender.com/api/gallery/upload"
+export const getAllImg: string = "https://gallery-back.onrender.com/api/gallery/allImages"
+export const deleteImg: string = "https://gallery-back.onrender.com/api/gallery/allImages"
+export const uploadImgUser: string = "https://gallery-back.onrender.com/api/users/user/upload"
