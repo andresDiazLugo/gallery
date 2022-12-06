@@ -16,9 +16,9 @@ export default function Admin(prop:props) {
   const handleDeleteImg = async(id:string)=>{
       await DELETE(deleteImg+"/"+id,token)
   }
-  const handleStateChangeImg= (id:number)=>{
+  const handleStateChangeImg= async(id:number)=>{
+    await handleDeleteImg(String(id))
     prop.setRenderUpdateNavigate(!prop.renderUpdateNavigate)
-    handleDeleteImg(String(id))
   }
   if(!gallery.length){
     return (<NotSearchImg msg="No hay registros existentes"/>)

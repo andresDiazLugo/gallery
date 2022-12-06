@@ -41,11 +41,11 @@ export default function App() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="w-full  pt-50px pb-50px  mt-60"
+        className="w-full h-3/5  pt-50px pb-50px  mt-40"
       >
         { gallery.length > 0 && gallery.map((e:GalleryImg)=>{
-          return <SwiperSlide key={e.id} className="bg-center bg-cover w-80 h-96 rounded-3xl">
-          <img className="block w-80 h-96 rounded-3xl" src={e?.urlImg}/>
+          return <SwiperSlide key={e.id} className="bg-center bg-cover  w-96 h-full rounded-3xl">
+          <img className="block w-96 h-full rounded-3xl" src={e?.urlImg}/>
         </SwiperSlide>
         })}
       
