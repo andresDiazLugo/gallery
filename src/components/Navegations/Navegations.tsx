@@ -51,28 +51,28 @@ export default function Navegations(prop:props) {
                         </div>
                         
                             <ul className="  flex flex-col sm:flex sm:flex-row gap-5 ">
-                            <NavLink to="/" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
+                            <NavLink to="/nav/gallery" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
                                 <li   
                                     className="flex items-center text-white hover:bg-gray-700  hover:text-white  px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Galeria
                                 </li>
                             </NavLink>    
-                            <NavLink to="/home/Upload" className={({isActive})=>isActive ? "bg-gray-900 h-fit ": undefined}>
+                            <NavLink to="/nav/Upload" className={({isActive})=>isActive ? "bg-gray-900 h-fit ": undefined}>
                                 <li  
                                     className="flex items-center text-gray-300 hover:bg-gray-700  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Subir imagenes
                                 </li>
                             </NavLink>
-                            <NavLink to="/home/Administration" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
+                            <NavLink to="/nav/Administration" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
                                 <li     
                                     className="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Administra tus imagenes
                                 </li>
                             </NavLink>
-        	                <NavLink to="/home/About" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
+        	                <NavLink to="/nav/About" className={({isActive})=>isActive ? "bg-gray-900 h-fit": undefined}>
                                 <li
                                     className="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
