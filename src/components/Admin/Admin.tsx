@@ -37,7 +37,7 @@ export default function Admin(prop:props) {
             {gallery.length >0 && gallery?.map((e:GalleryImg)=>{
                return <tr key={e.id} className='border-inherit divide-y '>
                           {/* <td className=' font-semibold bg-white	p-1 text-center text-sm flex items-center gap-2'><img className='  rounded-lg w-5 ' src={e.urlImg}/> {e.}</td> */}
-                          <td  className='  font-semibold bg-white p-1  break-all w-30 text-center text-sm flex items-center gap-2'><img className='  rounded-lg w-6  h-6' src={e.urlImg}/>{!e.title ? "no tinen descipcion":e.title}</td>
+                          <td  className='  font-semibold bg-white p-1  break-all w-30 text-center text-sm flex items-center gap-2'><img className='  rounded-lg w-6  h-6' src={e.urlImg}/>{!e.title ? "no contiene descipcion":e.title}</td>
                           <td  className='  font-semibold bg-white p-1 text-center text-sm'>{e.createdAt?.split("T")[0].split("")}</td>
                           <td  className='	font-semibold bg-white p-1 text-center text-sm'><RiDeleteBin2Fill className='cursor-pointer' onClick={()=>handleStateChangeImg(String(e.idCloudinary))} color='red' size="1.3rem"/></td>   
                       </tr>
