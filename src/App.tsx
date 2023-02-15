@@ -18,20 +18,20 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/' element={<SignUp/>}/>
         <Route path='/signIn' element={<SignIn/>}/>
         <Route path='/' element={
-        <VerifyTokenPath>
+          <VerifyTokenPath>
           <StateGlobal>
             <Navegation renderUpdateNavigate={renderUpdateNavigate}/>
           </StateGlobal>
         </VerifyTokenPath>
         }>
-          <Route path='/' element={<Gallery/>} />
-          <Route path='/home/Administration' element={<Admin renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate} />} />
-          <Route path='/home/About' element={<About/>} />
-          <Route path='/home/Upload' element={<Upload renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate} />} />
-          <Route path='/home/profileUser' element={<Profile renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate}  />} />
+          <Route path='/nav/gallery' element={<Gallery/>} />
+          <Route path='/nav/Administration' element={<Admin renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate} />} />
+          <Route path='/nav/About' element={<About/>} />
+          <Route path='/nav/Upload' element={<Upload renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate} />} />
+          <Route path='/nav/profileUser' element={<Profile renderUpdateNavigate={renderUpdateNavigate} setRenderUpdateNavigate={setRenderUpdateNavigate}  />} />
         </Route>
         <Route path='/*' element={<Navigate to={"/"} replace={true}/>}/>
       </Routes>
