@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/' element={<SignUp/>}/>
         <Route path='/signIn' element={<SignIn/>}/>
         <Route path='/' element={
         <VerifyTokenPath>
