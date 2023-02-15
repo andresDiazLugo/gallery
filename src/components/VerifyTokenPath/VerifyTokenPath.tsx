@@ -5,7 +5,7 @@ export default function VerifyTokenPath({children}:any) {
 
     const token = useGetToken()
     if(!token){
-       return  <Navigate to="/signUp"/>
+       return  <Navigate to="/"/>
     }
     return (children)
 }
