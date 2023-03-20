@@ -6,17 +6,19 @@ import Gallery from './components/gallery/Gallery'
 import Upload from './components/upload/Upload'
 import Admin from './components/Admin/Admin'
 import About from './components/about/About'
-import {Routes,Route, Navigate} from 'react-router-dom'
+import {Routes,Route, Navigate,HashRouter} from 'react-router-dom'
 import VerifyTokenPath from './components/VerifyTokenPath/VerifyTokenPath'
 import Profile from './components/Profile/Profile'
 import {Toaster} from 'react-hot-toast'
 import StateGlobal from './components/StateGlobal/StateGlobal'
+
 
 function App() {
   const [renderUpdateNavigate,setRenderUpdateNavigate] = useState<boolean>(false) 
 
   return (
     <div>
+      <HashRouter>
       <Routes>
         {/* <Route path='/' element={<SignUp/>}/> */}
         <Route path='/signIn' element={<SignIn/>}/>
@@ -35,6 +37,9 @@ function App() {
         </Route>
         <Route path='/*' element={<Navigate to={"/"} replace={true}/>}/>
       </Routes>
+      </HashRouter>
+
+    
       <Toaster/>
     </div>
   )
